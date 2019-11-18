@@ -1,52 +1,61 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
-export const Container = styled.div`
-  position: relative;
+export const Container = styled.li`
+  display: flex;
+  flex-direction: column;
+
   background: #fff;
   border-radius: 5px;
   margin-bottom: 10px;
-  padding: 15px;
-  box-shadow: 0 1px 4px 0 rgba(192,208,230,0.8);
-  border-top: 20px solid rgba(230,236,245,0.4);
+  box-shadow: 0 1px 4px 0 rgba(192, 208, 230, 0.8);
   cursor: grab;
 
-  header{
-    position: absolute;
-    top: -22px;
-    left: 15px;
+  header {
+    display: flex;
+    justify-content: flex-start !important;
+    width: 100%;
+    padding: 12px 24px;
+    font-weight: 500;
+    background: rgba(230, 236, 245, 0.4);
   }
 
-  p{
-    font-weight: 500;
+  p {
     line-height: 20px;
   }
 
-  img{
+  img {
     width: 24px;
     height: 24px;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-top: 5px;
   }
 
-  ${(props) => props.isDragging && css`
-    border: 2px dashed rgba(0,0,0,0.2);
-    padding: 31px;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-    cursor: grabbing;
+  ${props =>
+    props.isDragging &&
+    css`
+      border: 2px dashed rgba(0, 0, 0, 0.2);
+      padding: 31px;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      cursor: grabbing;
 
-    p, img, header{
-      opacity: 0;
-    }
+      p,
+      img,
+      header {
+        opacity: 0;
+      }
+    `}
+`;
 
-  `}
+export const Content = styled.span`
+  padding: 15px;
 `;
 
 export const Label = styled.span`
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
   border-radius: 2px;
-  display: inline-block;
-  background: ${(props) => props.color};
+  background: ${props => props.color};
 `;

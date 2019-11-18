@@ -1,97 +1,112 @@
 export function loadLists() {
   return [
     {
-      title: 'Tarefas',
+      title: "Tarefas",
       creatable: true,
       cards: [
         {
           id: 1,
-          content: 'Estudar módulo 01 de NodeJS',
-          labels: ['#7159c1'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: "Estudar módulo 01",
+          content: "Estudar módulo 01 de NodeJS",
+          labels: ["#7159c1"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 2,
-          content: 'Criar vídeo para o Youtube ensinando a recriar a interface do Pipefy',
-          labels: ['#7159c1'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: "Criar vídeo para o Youtube",
+          content:
+            "Criar vídeo para o Youtube ensinando a recriar a interface do Pipefy",
+          labels: ["#7159c1"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 3,
-          content: 'Estudar módulo 03 de React Native',
-          labels: ['#7159c1'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: "Estudar módulo 03",
+          content: "Estudar módulo 03 de React Native",
+          labels: ["#7159c1"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 4,
-          content: 'Gravar Aula "NextJS: Utilizando server-side rendering com ReactJS"',
-          labels: ['#54e1f7'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: 'Gravar Aula "NextJS" ',
+          content:
+            'Gravar Aula "NextJS: Utilizando server-side rendering com ReactJS"',
+          labels: ["#54e1f7"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 5,
-          content: 'Gravar testes e deploy ReactJS',
-          labels: ['#54e1f7'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
-        },
-      ],
+          title: "Gravar testes",
+          content: "Gravar testes e deploy ReactJS",
+          labels: ["#54e1f7"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
+        }
+      ]
     },
     {
-      title: 'Fazendo',
+      title: "Fazendo",
       creatable: false,
       cards: [
         {
           id: 6,
-          content: 'Recriando clone do Pipefy',
+          title: "Recriando clone",
+          content: "Recriando clone do Pipefy",
           labels: [],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
-        },
-      ],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
+        }
+      ]
     },
     {
-      title: 'Pausado',
+      title: "Pausado",
       creatable: false,
       cards: [
         {
           id: 7,
-          content: 'Gravar sobre Geolocalização e mapas com React Native',
-          labels: ['#7159c1'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: "Gravar sobre Geolocalização",
+          content: "Gravar sobre Geolocalização e mapas com React Native",
+          labels: ["#7159c1"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 8,
-          content: 'Gravar testes e deploy ReactJS',
-          labels: ['#54e1f7'],
-          user: 'https://api.adorable.io/avatars/285/abott@adorable.png',
+          title: "Gravar Testes",
+          content: "Gravar testes e deploy ReactJS",
+          labels: ["#54e1f7"],
+          user: "https://api.adorable.io/avatars/285/abott@adorable.png"
         },
         {
           id: 9,
-          content: 'Ajustes na biblioteca unform',
-          labels: [],
-        },
-      ],
+          title: "Ajustes",
+          content: "Ajustes na biblioteca unform",
+          labels: []
+        }
+      ]
     },
     {
-      title: 'Concluído',
+      title: "Concluído",
       creatable: false,
       done: true,
       cards: [
         {
           id: 10,
-          content: 'Gravar aula sobre deploy e CI com React Native',
-          labels: [],
+          title: "Gravar aula",
+          content: "Gravar aula sobre deploy e CI com React Native",
+          labels: []
         },
         {
           id: 12,
-          content: 'Gravar testes e deploy ReactJS',
-          labels: ['#54e1f7'],
+          title: "Gravar testes",
+          content: "Gravar testes e deploy ReactJS",
+          labels: ["#54e1f7"]
         },
         {
           id: 13,
-          content: 'Gravar Aula "Internacionalização de aplicações Node.js, ReactJS e React Native"',
-          labels: ['#7159c1'],
-        },
-      ],
-    },
+          title: "Gravar Aula",
+          content:
+            'Gravar Aula "Internacionalização de aplicações Node.js, ReactJS e React Native"',
+          labels: ["#7159c1"]
+        }
+      ]
+    }
   ];
 }

@@ -5,7 +5,7 @@ import { useDrag, useDrop } from "react-dnd";
 
 import BoardContext from "../Board/context";
 
-import { Container, Label } from "./styles";
+import { Container, Content, Label } from "./styles";
 
 export default function Card({ data, index, listIndex }) {
   const ref = useRef();
@@ -65,9 +65,12 @@ export default function Card({ data, index, listIndex }) {
         {data.labels.map(label => (
           <Label key={label} color={label} />
         ))}
+        {data.title}
       </header>
-      <p>{data.content}</p>
-      {data.user && <img src={data.user} alt="" />}
+      <Content>
+        <p>{data.content}</p>
+        {data.user && <img src={data.user} alt="" />}
+      </Content>
     </Container>
   );
 }
